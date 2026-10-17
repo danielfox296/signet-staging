@@ -44,7 +44,7 @@
      only one that works, so it is promoted to the default: 7.92:1 on the base
      and 7.26:1 on the band. The old light-ground brass (#84682d) reads 2.4:1
      here and is gone. */
-  --brass: #c9a45a;
+  --brass: #e0b060;
   /* Kept for the rare second level of emphasis. 10.12:1 on the base. */
   --brass-bright: #dcbb7a;
   /* Alias, retained so the cover-wall and night rules that predate the
