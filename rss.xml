@@ -7,13 +7,6 @@
   <language>en-us</language>
   <atom:link href="https://signetartists.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>Admin test post</title>
-    <link>https://signetartists.com/blog/admin-test-post/</link>
-    <description>A test post from the admin.</description>
-    <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-    <guid>https://signetartists.com/blog/admin-test-post/</guid>
-  </item>
-  <item>
     <title>Why does music bring back memories?</title>
     <link>https://signetartists.com/blog/why-does-music-bring-back-memories/</link>
     <description>Why does music bring back memories? What studies found about music and memory, nostalgia and 'our song', and how to use it at an anniversary party.</description>
@@ -145,6 +138,13 @@
     <description>What Americana music is, how it differs from country, folk and bluegrass, the instruments, the artists and songs, and which size of Americana band to book for a Colorado reception, retreat or wedding.</description>
     <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
     <guid>https://signetartists.com/blog/what-is-americana-music/</guid>
+  </item>
+  <item>
+    <title>What is a string quartet?</title>
+    <link>https://signetartists.com/blog/what-is-a-string-quartet/</link>
+    <description>A string quartet is two violins, a viola and a cello. What each one plays, how a trio or a solo violinist compares, and the songs strings play for a wedding aisle.</description>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+    <guid>https://signetartists.com/blog/what-is-a-string-quartet/</guid>
   </item>
 </channel>
 </rss>
