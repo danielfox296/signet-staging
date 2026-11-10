@@ -30,7 +30,7 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="../../styles.css?v=20260923a-1f42k0a">
+  <link rel="stylesheet" href="../../styles.css?v=20260923a-1twriwb">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Why guests can't hear the toast", "description": "Why wedding toasts and event speeches get lost: the microphone held too low, the squeal, and music left up under the voice. What to ask your band and venue so every table hears every word.", "author": {"@type": "LocalBusiness", "@id": "https://signetartists.com/#business", "name": "Signet Artists", "url": "https://signetartists.com", "logo": {"@type": "ImageObject", "url": "https://signetartists.com/img/logo-512.png"}}, "publisher": {"@type": "LocalBusiness", "@id": "https://signetartists.com/#business", "name": "Signet Artists", "url": "https://signetartists.com", "logo": {"@type": "ImageObject", "url": "https://signetartists.com/img/logo-512.png"}}, "datePublished": "2026-11-07", "dateModified": "2026-11-07", "image": "https://signetartists.com/img/unsplash/photo-1521321335080-61c4776db11b.jpg", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://signetartists.com/blog/why-guests-cant-hear-the-toast/", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://signetartists.com/img/unsplash/photo-1521321335080-61c4776db11b.jpg"}}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://signetartists.com/"}, {"@type": "ListItem", "position": 2, "name": "For Planners", "item": "https://signetartists.com/planners/"}, {"@type": "ListItem", "position": 3, "name": "Your venue", "item": "https://signetartists.com/planners/technical/"}, {"@type": "ListItem", "position": 4, "name": "Why guests can't hear the toast", "item": "https://signetartists.com/blog/why-guests-cant-hear-the-toast/"}]}</script>
   <script>(function(){var h=location.hostname;if(h!=='signetartists.com'&&h!=='www.signetartists.com')return;try{var q=location.search;if(/[?&]internal=1(&|$)/.test(q))localStorage.setItem('signet_internal','1');if(/[?&]internal=0(&|$)/.test(q))localStorage.removeItem('signet_internal');if(localStorage.getItem('signet_internal')==='1')return;}catch(e){}if(navigator.webdriver)return;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-LL5DKVEX29';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-LL5DKVEX29');})();</script>
   <script defer src="../../analytics.js"></script>
@@ -75,6 +75,9 @@
   </script><script>
     (function () {
       var SKIP = '.breadcrumb ol, .blog-byline, .blog-row-meta, .wall-grid, .nav-mobile, .story-photos';
+      // Rows of award laurels and outlet marks never end on one alone, even
+      // two-and-one; a photo gallery fills its last row when a count allows.
+      var STRICT = '.laurels, .honor-marks';
       var watched = [];
       function items(el) {
         var out = [];
@@ -93,8 +96,9 @@
         });
         return r.map(function (x) { return x.n; });
       }
-      function lone(counts) {
-        return counts.length > 1 && counts[counts.length - 1] === 1 && Math.max.apply(null, counts) >= 3;
+      function lone(counts, el) {
+        var most = el && el.matches(STRICT) ? 2 : 3;
+        return counts.length > 1 && counts[counts.length - 1] === 1 && Math.max.apply(null, counts) >= most;
       }
       function tracks(el) {
         var t = getComputedStyle(el).gridTemplateColumns;
@@ -136,13 +140,18 @@
         el.style.marginLeft = st.ml;
         el.style.marginRight = st.mr;
       }
+      function exact(n, c) {
+        var tries = [c, c + 1, c - 1];
+        for (var i = 0; i < tries.length; i++) { if (tries[i] >= 2 && n > tries[i] && n % tries[i] === 0) { return tries[i]; } }
+        return 0;
+      }
       function fitGrid(el, n) {
-        var c = tracks(el), k = pick(n, c);
+        var c = tracks(el), k = (el.matches('.media-grid') && exact(n, c)) || pick(n, c);
         if (k !== c) { el.style.gridTemplateColumns = 'repeat(' + k + ', minmax(0, 1fr))'; }
       }
       function fitFlex(el, list) {
         var counts = rows(list);
-        if (!lone(counts)) { return; }
+        if (!lone(counts, el)) { return; }
         var top = el.clientWidth, floor = 0, want = counts.length, found = 0;
         list.forEach(function (k) { floor = Math.max(floor, k.offsetWidth); });
         for (var extra = 0; extra < 6 && !found; extra++) {
@@ -153,7 +162,7 @@
             if (rows(list).length > want + extra) { lo = mid; } else { hi = mid; }
           }
           el.style.maxWidth = hi + 'px';
-          if (!lone(rows(list))) { found = hi; } else { top = hi - 1; }
+          if (!lone(rows(list), el)) { found = hi; } else { top = hi - 1; }
         }
         if (!found) { reset(el); return; }
         if (getComputedStyle(el).justifyContent === 'center') { el.style.marginLeft = 'auto'; el.style.marginRight = 'auto'; }
