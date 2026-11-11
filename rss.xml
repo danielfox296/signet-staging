@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://signetartists.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Quadrasonic brings Signet Artists to Vail</title>
+    <link>https://signetartists.com/blog/quadrasonic-joins-signet-artists/</link>
+    <description>Vail Valley rock band Quadrasonic joins Signet Artists. Book a band that lives in Vail for weddings in Vail and Beaver Creek, retreats and parties.</description>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <guid>https://signetartists.com/blog/quadrasonic-joins-signet-artists/</guid>
+  </item>
+  <item>
     <title>Emily Barnes joins Signet Artists</title>
     <link>https://signetartists.com/blog/emily-barnes-joins-signet-artists/</link>
     <description>Award-winning folk singer-songwriter Emily Barnes joins Signet Artists. Book her solo, as a duo with guitar or fiddle, or as a trio in Colorado.</description>
@@ -138,13 +145,6 @@
     <description>What can live music do for memory care residents, and what can't it do? Here's what research says about engagement, the right songs and hearing.</description>
     <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
     <guid>https://signetartists.com/blog/live-music-for-memory-care-residents/</guid>
-  </item>
-  <item>
-    <title>Is live music better than recorded?</title>
-    <link>https://signetartists.com/blog/is-live-music-better-than-recorded/</link>
-    <description>Is live music better than recorded? Studies found people move more and feel more connected to each other at a live show. Here's what holds up.</description>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
-    <guid>https://signetartists.com/blog/is-live-music-better-than-recorded/</guid>
   </item>
 </channel>
 </rss>
