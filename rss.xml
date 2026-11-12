@@ -7,11 +7,25 @@
   <language>en-us</language>
   <atom:link href="https://signetartists.com/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>The pianist in the store</title>
+    <link>https://signetartists.com/blog/the-pianist-in-the-store/</link>
+    <description>Nordstrom hired its first store pianists in 1985, and by 2020 the last had retired. Here’s their story, and what a live pianist does that a playlist can’t.</description>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <guid>https://signetartists.com/blog/the-pianist-in-the-store/</guid>
+  </item>
+  <item>
     <title>Quadrasonic brings Signet Artists to Vail</title>
     <link>https://signetartists.com/blog/quadrasonic-joins-signet-artists/</link>
     <description>Vail Valley rock band Quadrasonic joins Signet Artists. Book a band that lives in Vail for weddings in Vail and Beaver Creek, retreats and parties.</description>
     <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
     <guid>https://signetartists.com/blog/quadrasonic-joins-signet-artists/</guid>
+  </item>
+  <item>
+    <title>Live music in your store: when to book a band</title>
+    <link>https://signetartists.com/blog/live-music-in-your-store/</link>
+    <description>When to book live music for a store event, how to plan the volume, breaks and setup, and why the radio exemption doesn’t cover a live performance.</description>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <guid>https://signetartists.com/blog/live-music-in-your-store/</guid>
   </item>
   <item>
     <title>Roma Ransom joins Signet Artists</title>
@@ -131,20 +145,6 @@
     <description>Is karaoke good for team building? We look at what studies of singing together show, what they don't show, and how live band karaoke fits in.</description>
     <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
     <guid>https://signetartists.com/blog/karaoke-team-building/</guid>
-  </item>
-  <item>
-    <title>Does music make food taste better?</title>
-    <link>https://signetartists.com/blog/does-music-make-food-taste-better/</link>
-    <description>Does music make food taste better? Here's what studies found about noise and taste, music and wine, and the best music for a dinner party.</description>
-    <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
-    <guid>https://signetartists.com/blog/does-music-make-food-taste-better/</guid>
-  </item>
-  <item>
-    <title>Party music for all ages</title>
-    <link>https://signetartists.com/blog/party-music-for-all-ages/</link>
-    <description>Planning party music for all ages? Here's what research says about the decades each generation remembers best, with a table by guest age.</description>
-    <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
-    <guid>https://signetartists.com/blog/party-music-for-all-ages/</guid>
   </item>
 </channel>
 </rss>
