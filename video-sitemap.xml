@@ -613,4 +613,28 @@
       <video:publication_date>2026-11-06</video:publication_date>
     </video:video>
   </url>
+  <url>
+    <loc>https://signetartists.com/video/jazz-duo-there-will-never-be-another-you-guitar-upright-bass/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://signetartists.com/media/jazz-duo-there-will-never-be-another-you-poster.jpg</video:thumbnail_loc>
+      <video:title>Jazz duo playing There Will Never Be Another You on guitar and upright bass</video:title>
+      <video:description>Watch our jazz duo play There Will Never Be Another You on guitar and upright bass. It&#x27;s one of the jazz standards on our song list.</video:description>
+      <video:content_loc>https://signetartists.com/media/jazz-duo-there-will-never-be-another-you.mp4</video:content_loc>
+      <video:duration>63</video:duration>
+      <video:publication_date>2026-11-20</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://signetartists.com/video/jazz-duo-blue-bossa-guitar-upright-bass/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://signetartists.com/media/jazz-duo-blue-bossa-poster.jpg</video:thumbnail_loc>
+      <video:title>Jazz duo playing Blue Bossa on guitar and upright bass</video:title>
+      <video:description>Here&#x27;s our jazz duo playing Blue Bossa on guitar and upright bass. It&#x27;s a great pick if you like a little bossa nova with your jazz.</video:description>
+      <video:content_loc>https://signetartists.com/media/jazz-duo-blue-bossa.mp4</video:content_loc>
+      <video:duration>31</video:duration>
+      <video:publication_date>2026-11-20</video:publication_date>
+    </video:video>
+  </url>
 </urlset>
